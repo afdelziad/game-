@@ -52,39 +52,16 @@ void main ()
         result = 3 ;
         printf("j'ai choisi ciseau \n");
     }
-    if ( result == 1 && reponse == 2 )
+    if ( ( result == 1 && reponse == 2 ) || ( result == 3 && reponse == 1 ) || ( result == 2 && reponse == 3 ) )
     {
         printf("vous avez gagner \n");
         printf("+1\n");
      score ++;
     }
-    else if ( result == 1 && reponse == 3 )
+    
+    else if ( ( result == 1 && reponse == 3 ) || ( result == 3 && reponse == 2 ) || ( result == 2 && reponse == 1 ))
     {
         printf("vous avez echoue \n");
-        printf("-1\n");
-        score --;
-    }
-    else if ( result == 2 && reponse == 1 )
-    {
-        printf("vous avez echoue \n");
-        printf("-1\n");
-        score --;
-    }
-    else if ( result == 2 && reponse == 3 )
-    {
-        printf("vous avez gagner \n");
-        printf("+1\n");
-        score ++;
-    }
-    else if ( result == 3 && reponse == 1 )
-    {
-        printf("vous avez gagnez \n");
-        printf("+1\n");
-        score ++;
-    }
-    else if ( result == 3 && reponse == 2 )
-    {
-        printf(" vous avez echoue \n");
         printf("-1\n");
         score --;
     }
@@ -94,3 +71,4 @@ void main ()
     }
     printf("votre score est :%d \n",score);
 }
+
